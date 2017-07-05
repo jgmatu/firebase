@@ -36,12 +36,13 @@
                 var db = database.ref( path );
 
                 db.once('value').then(function(snapshot) {
-                        console.log(snapshot.val());
+                        showData(snapshot.val())
                 });
         }
 
         var showData = function ( data ) {
-                console.log(data);
+                document.getElementById("result").innerHTML ="Air Speed : " +
+                        data["Sensors-Variables"]["Air-Speed"];
         }
 
         // Initialize Firebase
@@ -55,14 +56,18 @@
         };
         firebase.initializeApp(config);
 
+        window.onload = function() {
+                queryData("YQsfXJlMTocytx6AOBLhrjInzcI3");
+        };
+
         var email = "francisco.gutierrez@ti.eptisa.com";
         var password = "123456";
 
         openSession(email, password);
-        queryData("YQsfXJlMTocytx6AOBLhrjInzcI3");
 
         </script>
 </head>
         <body>
+                <p id="result"> </p>
         </body>
 </html>
