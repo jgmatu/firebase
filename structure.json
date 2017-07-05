@@ -1,0 +1,37 @@
+{
+        "user-preferences" : {
+                "Location" : "Spain",
+                "Heating system" : ["Calefaccion", "AC"],
+                "Square meters of the home" : 100, m2
+                "Number or rooms" : 3,
+                "Number of termostats" : 1,
+                "Max Hot" : 39, ºC
+                "Min Hot" : 20, ºC
+                "Schedule" : {
+                        "Day" : ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday"],
+                        "Range-Hours" : {
+                                "Begin" : 10,
+                                "End" : 12,
+                        },
+                        "Threshold-temperature" : "29", ºC
+                        "Moment-Day" : ["AM", "PM"]
+                },
+                "Smart-Mode" : true,
+                "Energy-Optimization" : ["Normal", "Ultra"]
+        },
+
+        "sensors-variables" : {
+                "Humity" : 30 %,
+                "Temperature" : 20 ºC,
+                "Energy-Consumed or Power..." : 200 J,
+                "Air-Speed" : 10 m/s
+        },
+
+        "system-control" : {
+                "Date" : "YYYY-MM-DD-HH-MM",
+                "User" : "pepe",
+                "Device -Temperature" : 78 ºC,
+                "Internet-Conntection" : true,
+                "People-home" : [true, false, true]
+        }
+}
